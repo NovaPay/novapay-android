@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp") version "2.1.10-1.0.30"
-    id("maven-publish")
 }
 
 android {
@@ -38,7 +37,7 @@ android {
 }
 
 dependencies {
-    implementation(files("libs/nova_pay_sdk.aar"))
+    implementation(project(":sdk"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -85,6 +84,4 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
-
-    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.14")
 }
