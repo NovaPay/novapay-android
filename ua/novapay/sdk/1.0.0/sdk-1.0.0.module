@@ -1,0 +1,281 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ua.novapay",
+    "module": "sdk",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-1.0.0.aar",
+          "url": "sdk-1.0.0.aar",
+          "size": 951206,
+          "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
+          "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
+          "sha1": "b1f17ae70fd625042b06ec2760ddafe11dfeadce",
+          "md5": "cb2d41eea3991d860c1e2849444e82a4"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-runtime-android",
+          "version": {
+            "requires": "2.9.0-beta01"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-play-services",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-android",
+          "version": {
+            "requires": "4.0.2"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-wallet",
+          "version": {
+            "requires": "19.4.0"
+          }
+        },
+        {
+          "group": "com.hannesdorfmann",
+          "module": "adapterdelegates4-kotlin-dsl",
+          "version": {
+            "requires": "4.3.2"
+          }
+        },
+        {
+          "group": "com.hannesdorfmann",
+          "module": "adapterdelegates4-kotlin-dsl-viewbinding",
+          "version": {
+            "requires": "4.3.2"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil-svg",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.7.1"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-ktx",
+          "version": {
+            "requires": "2.7.1"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-1.0.0.aar",
+          "url": "sdk-1.0.0.aar",
+          "size": 951206,
+          "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
+          "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
+          "sha1": "b1f17ae70fd625042b06ec2760ddafe11dfeadce",
+          "md5": "cb2d41eea3991d860c1e2849444e82a4"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "sdk-1.0.0-sources.jar",
+          "url": "sdk-1.0.0-sources.jar",
+          "size": 124251,
+          "sha512": "dffc9392843619a6560d2cd0c4a4c999792dd7a05c0c8fbd016ceef2dd039e78cd2f858ed91eb1833f9faf854e5fb02623ea7766fc78123700c666cce6c6f340",
+          "sha256": "497279c55c78decb9d4a100ec786861e4b9b0b82b24d02bf81f9ba7ca05eac21",
+          "sha1": "81d51fcad48d2bcafab896aa32a3e9c1330c1393",
+          "md5": "ef01f9411a4ecad437b6111d7d3f6812"
+        }
+      ]
+    }
+  ]
+}
