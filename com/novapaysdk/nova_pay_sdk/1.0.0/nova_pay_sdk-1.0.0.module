@@ -1,8 +1,8 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "group": "ua.novapay",
-    "module": "sdk",
+    "group": "com.novapaysdk",
+    "module": "nova_pay_sdk",
     "version": "1.0.0",
     "attributes": {
       "org.gradle.status": "release"
@@ -40,8 +40,8 @@
       ],
       "files": [
         {
-          "name": "sdk-1.0.0.aar",
-          "url": "sdk-1.0.0.aar",
+          "name": "nova_pay_sdk-1.0.0.aar",
+          "url": "nova_pay_sdk-1.0.0.aar",
           "size": 951206,
           "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
           "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
@@ -244,8 +244,8 @@
       ],
       "files": [
         {
-          "name": "sdk-1.0.0.aar",
-          "url": "sdk-1.0.0.aar",
+          "name": "nova_pay_sdk-1.0.0.aar",
+          "url": "nova_pay_sdk-1.0.0.aar",
           "size": 951206,
           "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
           "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
@@ -267,8 +267,8 @@
       },
       "files": [
         {
-          "name": "sdk-1.0.0-sources.jar",
-          "url": "sdk-1.0.0-sources.jar",
+          "name": "nova_pay_sdk-1.0.0-sources.jar",
+          "url": "nova_pay_sdk-1.0.0-sources.jar",
           "size": 124251,
           "sha512": "dffc9392843619a6560d2cd0c4a4c999792dd7a05c0c8fbd016ceef2dd039e78cd2f858ed91eb1833f9faf854e5fb02623ea7766fc78123700c666cce6c6f340",
           "sha256": "497279c55c78decb9d4a100ec786861e4b9b0b82b24d02bf81f9ba7ca05eac21",

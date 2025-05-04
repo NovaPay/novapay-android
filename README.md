@@ -1,0 +1,25 @@
+novapay-android
+=======
+
+Novapay Android SDK
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Adding dependency
+=======
+1. Download project as a zip file, it contains `repo` folder with library and its dependencies
+2. Add `repo` folder to your root project directory
+3. Inside your project at `settings.gradle` under `dependencyResolutionManagement` add `repo` folder as a maven repository
+```
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        //...
+        maven {
+            url = uri("https://storage.googleapis.com/np_public")
+        }
+    }
+}
+```
+4. At module-level `build.gradle` add `implementation("com.novapaysdk:nova_pay_sdk:1.0.0")`
