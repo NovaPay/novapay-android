@@ -1,8 +1,8 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "group": "com.novapaysdk",
-    "module": "nova_pay_sdk",
+    "group": "ua.novapay",
+    "module": "sdk",
     "version": "1.0.0",
     "attributes": {
       "org.gradle.status": "release"
@@ -24,77 +24,6 @@
       },
       "dependencies": [
         {
-          "group": "androidx.databinding",
-          "module": "viewbinding",
-          "version": {
-            "requires": "8.9.2"
-          }
-        },
-        {
-          "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "2.1.10"
-          }
-        }
-      ],
-      "files": [
-        {
-          "name": "nova_pay_sdk-1.0.0.aar",
-          "url": "nova_pay_sdk-1.0.0.aar",
-          "size": 951206,
-          "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
-          "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
-          "sha1": "b1f17ae70fd625042b06ec2760ddafe11dfeadce",
-          "md5": "cb2d41eea3991d860c1e2849444e82a4"
-        }
-      ]
-    },
-    {
-      "name": "releaseRuntimeElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.jvm.environment": "android",
-        "org.gradle.usage": "java-runtime",
-        "org.jetbrains.kotlin.platform.type": "androidJvm"
-      },
-      "dependencies": [
-        {
-          "group": "androidx.core",
-          "module": "core-ktx",
-          "version": {
-            "requires": "1.16.0"
-          }
-        },
-        {
-          "group": "androidx.appcompat",
-          "module": "appcompat",
-          "version": {
-            "requires": "1.7.0"
-          }
-        },
-        {
-          "group": "com.google.android.material",
-          "module": "material",
-          "version": {
-            "requires": "1.12.0"
-          }
-        },
-        {
-          "group": "androidx.activity",
-          "module": "activity",
-          "version": {
-            "requires": "1.10.1"
-          }
-        },
-        {
-          "group": "androidx.constraintlayout",
-          "module": "constraintlayout",
-          "version": {
-            "requires": "2.2.1"
-          }
-        },
-        {
           "group": "androidx.navigation",
           "module": "navigation-fragment-ktx",
           "version": {
@@ -112,7 +41,7 @@
           "group": "androidx.navigation",
           "module": "navigation-runtime-android",
           "version": {
-            "requires": "2.9.0-beta01"
+            "requires": "2.9.0-rc01"
           }
         },
         {
@@ -244,13 +173,217 @@
       ],
       "files": [
         {
-          "name": "nova_pay_sdk-1.0.0.aar",
-          "url": "nova_pay_sdk-1.0.0.aar",
-          "size": 951206,
-          "sha512": "ed9b0f871d5c000440444fe5d4b4696a00330b5120b6d078fa35e3f3f4c7fd52315850d95399a6d65462a5f52c168948b8994d78b72c172c446c7298e7281f91",
-          "sha256": "a08d0b64c9a038648c0243858acc8446a36a0691d7bb81d2d36263d528306649",
-          "sha1": "b1f17ae70fd625042b06ec2760ddafe11dfeadce",
-          "md5": "cb2d41eea3991d860c1e2849444e82a4"
+          "name": "sdk-1.0.0.aar",
+          "url": "sdk-1.0.0.aar",
+          "size": 957145,
+          "sha512": "c651067016b0867aea08a441c3fa2257b92bec4f70b2cb722cedb9ab0b33a4efeff8e1b2cb9d9dee03606b35e978e3cc46b768f139d0ce3eb23a4b18157b9714",
+          "sha256": "d9e64f7252179306a9a65d90b9c43ad3f497acb85340ef2274d5f5499f2dc081",
+          "sha1": "6117eb4ed747a3d71c8920a10c487783a0d78b35",
+          "md5": "dbd86d4e4cc279933caaf9be498e53ef"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-runtime-android",
+          "version": {
+            "requires": "2.9.0-rc01"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-play-services",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-android",
+          "version": {
+            "requires": "4.0.2"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-wallet",
+          "version": {
+            "requires": "19.4.0"
+          }
+        },
+        {
+          "group": "com.hannesdorfmann",
+          "module": "adapterdelegates4-kotlin-dsl",
+          "version": {
+            "requires": "4.3.2"
+          }
+        },
+        {
+          "group": "com.hannesdorfmann",
+          "module": "adapterdelegates4-kotlin-dsl-viewbinding",
+          "version": {
+            "requires": "4.3.2"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil-svg",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.7.1"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-ktx",
+          "version": {
+            "requires": "2.7.1"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-1.0.0.aar",
+          "url": "sdk-1.0.0.aar",
+          "size": 957145,
+          "sha512": "c651067016b0867aea08a441c3fa2257b92bec4f70b2cb722cedb9ab0b33a4efeff8e1b2cb9d9dee03606b35e978e3cc46b768f139d0ce3eb23a4b18157b9714",
+          "sha256": "d9e64f7252179306a9a65d90b9c43ad3f497acb85340ef2274d5f5499f2dc081",
+          "sha1": "6117eb4ed747a3d71c8920a10c487783a0d78b35",
+          "md5": "dbd86d4e4cc279933caaf9be498e53ef"
         }
       ]
     },
@@ -267,13 +400,13 @@
       },
       "files": [
         {
-          "name": "nova_pay_sdk-1.0.0-sources.jar",
-          "url": "nova_pay_sdk-1.0.0-sources.jar",
-          "size": 124251,
-          "sha512": "dffc9392843619a6560d2cd0c4a4c999792dd7a05c0c8fbd016ceef2dd039e78cd2f858ed91eb1833f9faf854e5fb02623ea7766fc78123700c666cce6c6f340",
-          "sha256": "497279c55c78decb9d4a100ec786861e4b9b0b82b24d02bf81f9ba7ca05eac21",
-          "sha1": "81d51fcad48d2bcafab896aa32a3e9c1330c1393",
-          "md5": "ef01f9411a4ecad437b6111d7d3f6812"
+          "name": "sdk-1.0.0-sources.jar",
+          "url": "sdk-1.0.0-sources.jar",
+          "size": 130100,
+          "sha512": "73b78c3089ef55b222021d9ca43bbd592a0ba4de6a3e2688087887829fb618b88152774a77c5ce63681b1ae845fece35d047d3cd1b7a194fc082290f5e02ca20",
+          "sha256": "d514e59afabf777ad7050efa47493e7bc158ef4e0e8dc5c4119f0ecfe9b72450",
+          "sha1": "7fbaed950eb4a30fb6a045491b39409b4affa755",
+          "md5": "a9b415784519485ff99fd9f9afada4b9"
         }
       ]
     }
