@@ -7,9 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Adding dependency
 =======
-1. Download project as a zip file, it contains `repo` folder with library and its dependencies
-2. Add `repo` folder to your root project directory
-3. Inside your project at `settings.gradle` under `dependencyResolutionManagement` add `repo` folder as a maven repository
+1. Inside your project at `settings.gradle` under `dependencyResolutionManagement` add `https://storage.googleapis.com/np_public` as a maven repository
 ```
 dependencyResolutionManagement {
     repositories {
@@ -22,4 +20,4 @@ dependencyResolutionManagement {
     }
 }
 ```
-4. At module-level `build.gradle` add `implementation("com.novapaysdk:nova_pay_sdk:1.0.0")`
+2. At module-level `build.gradle` add `implementation("com.novapaysdk:nova_pay_sdk:1.0.0")`
