@@ -22,7 +22,7 @@ dependencyResolutionManagement {
     }
 }
 ```
-4. At module-level `build.gradle` add `implementation("com.novapaysdk:nova_pay_sdk:1.0.0")`
+4. At module-level `build.gradle` add `implementation("ua.novapay:sdk:1.0.0")`
 
 
 
