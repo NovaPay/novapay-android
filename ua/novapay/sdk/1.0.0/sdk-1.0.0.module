@@ -397,18 +397,7 @@
         "org.gradle.libraryelements": "jar",
         "org.gradle.usage": "java-runtime",
         "org.jetbrains.kotlin.platform.type": "androidJvm"
-      },
-      "files": [
-        {
-          "name": "sdk-1.0.0-sources.jar",
-          "url": "sdk-1.0.0-sources.jar",
-          "size": 130100,
-          "sha512": "73b78c3089ef55b222021d9ca43bbd592a0ba4de6a3e2688087887829fb618b88152774a77c5ce63681b1ae845fece35d047d3cd1b7a194fc082290f5e02ca20",
-          "sha256": "d514e59afabf777ad7050efa47493e7bc158ef4e0e8dc5c4119f0ecfe9b72450",
-          "sha1": "7fbaed950eb4a30fb6a045491b39409b4affa755",
-          "md5": "a9b415784519485ff99fd9f9afada4b9"
-        }
-      ]
+      }
     }
   ]
 }
