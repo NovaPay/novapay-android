@@ -98,6 +98,14 @@ Check the status of a payment session:
 val sessionStatus = PaymentSdk.getSession(sessionId)
 ```
 
+```kotlin
+data class SessionStatusResult(
+    val status: String?,
+    @SerializedName("reason_uk") val reasonUk: String?,
+    @SerializedName("reason_en") val reasonEn: String?
+)
+```
+
 ## 📱 Integration Example
 
 ```kotlin
@@ -117,8 +125,9 @@ class YourActivity : AppCompatActivity() {
             sessionId = "your_session_id",
             sessionStatusCallback = { status ->
                 when (status) {
-                    "SUCCESS" -> handleSuccess()
-                    "FAILED" -> handleFailure()
+                    "holded" -> handleSuccess()
+                    "paid" -> handleSuccess()
+                    "failed" -> handleFailure()
                     else -> handleOtherStatus(status)
                 }
             },
