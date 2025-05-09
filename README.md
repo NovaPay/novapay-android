@@ -4,29 +4,7 @@ A powerful and secure payment processing SDK for Android applications that enabl
 
 ## 📦 Installation
 
-### Option 1: Local Repository
-
-1. Clone the repository (includes the library and its dependencies)
-2. Add the `repo` folder to your project's root directory
-3. Configure your `settings.gradle`:
-    ```gradle
-    dependencyResolutionManagement {
-        repositories {
-            google()
-            mavenCentral()
-            // Add NovaPay repository
-            maven {
-                url = uri("novapay-android")
-            }
-        }
-    }
-    ```
-4. Add the dependency in your module's `build.gradle`:
-    ```gradle
-    implementation("ua.novapay:sdk:1.0.0")
-    ```
-
-### Option 2: Remote Repository (Recommended)
+### Remote Repository (Recommended)
 
 1. Add the NovaPay repository to your `settings.gradle`:
     ```gradle
@@ -43,7 +21,7 @@ A powerful and secure payment processing SDK for Android applications that enabl
     ```
 2. Add the dependency in your module's `build.gradle`:
     ```gradle
-    implementation("com.novapaysdk:sdk:1.0.0")
+    implementation("com.novapaysdk:sdk:1.0.1")
     ```
 
 ## 🚀 Getting Started
