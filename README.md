@@ -33,7 +33,7 @@ Initialize the SDK in your application or activity:
 ```kotlin
 PaymentSdk.initialize(
     context = context,
-    environment = "development" // Options: "development", "staging", "production"
+    environment = EnvironmentType.DEVELOPMENT // Options: DEVELOPMENT, STAGING, PRODUCTION
 )
 ```
 
@@ -49,6 +49,9 @@ PaymentSdk.showPaymentSheet(
     sessionId = "your_session_id", // Session ID received from server's /init endpoint
     sessionStatusCallback = { status -> 
         // Handle session status updates
+    },
+    sessionErrorCallback = { message -> 
+        // Handle session error message
     },
     paymentSheetStatusCallback = { status ->
         // Handle payment sheet status updates
@@ -66,7 +69,6 @@ PaymentSdk.dismissPaymentSheet(activity)
 - 💳 Manual card payments
 - 👛 Wallet card
 - 🏷️ Google Pay
-- 🍎 Apple Pay
 
 ### Session Management
 
@@ -94,7 +96,7 @@ class YourActivity : AppCompatActivity() {
         // Initialize SDK
         PaymentSdk.initialize(
             context = this,
-            environment = "development"
+            environment = EnvironmentType.DEVELOPMENT
         )
         
         // Show payment sheet
@@ -103,11 +105,14 @@ class YourActivity : AppCompatActivity() {
             sessionId = "your_session_id",
             sessionStatusCallback = { status ->
                 when (status) {
-                    "holded" -> handleSuccess()
-                    "paid" -> handleSuccess()
-                    "failed" -> handleFailure()
+                    SessionPaymentStatusType.HOLDED -> handleSuccess()
+                    SessionPaymentStatusType.PAID -> handleSuccess()
+                    SessionPaymentStatusType.FAILED -> handleFailure()
                     else -> handleOtherStatus(status)
                 }
+            },
+            sessionErrorCallback = { message ->
+                // Handle session error message
             },
             paymentSheetStatusCallback = { status ->
                 Log.d("PaymentSheet", status)
@@ -124,6 +129,12 @@ class YourActivity : AppCompatActivity() {
 - Internet permission in `AndroidManifest.xml`:
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
+    ```
+- Meta-data in AndroidManifest.xml to enable Google Pay:
+   ```xml
+    <meta-data
+    android:name="com.google.android.gms.wallet.api.enabled"
+    android:value="true" />
     ```
 
 ## 🌍 Environment Configuration
