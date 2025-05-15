@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ua.novapay</groupId>
   <artifactId>sdk</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <packaging>aar</packaging>
   <name>sdk</name>
   <description>Novapay payment Library</description>
@@ -28,24 +28,6 @@
     </developer>
   </developers>
   <dependencies>
-    <dependency>
-      <groupId>androidx.navigation</groupId>
-      <artifactId>navigation-fragment-ktx</artifactId>
-      <version>2.8.9</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.navigation</groupId>
-      <artifactId>navigation-ui-ktx</artifactId>
-      <version>2.8.9</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.navigation</groupId>
-      <artifactId>navigation-runtime-android</artifactId>
-      <version>2.9.0-rc01</version>
-      <scope>compile</scope>
-    </dependency>
     <dependency>
       <groupId>com.squareup.retrofit2</groupId>
       <artifactId>retrofit</artifactId>
@@ -140,6 +122,24 @@
       <groupId>androidx.room</groupId>
       <artifactId>room-ktx</artifactId>
       <version>2.7.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-runtime</artifactId>
+      <version>2.8.9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-fragment-ktx</artifactId>
+      <version>2.8.9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-ui-ktx</artifactId>
+      <version>2.8.9</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

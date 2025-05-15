@@ -3,7 +3,7 @@
   "component": {
     "group": "ua.novapay",
     "module": "sdk",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -23,27 +23,6 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "dependencies": [
-        {
-          "group": "androidx.navigation",
-          "module": "navigation-fragment-ktx",
-          "version": {
-            "requires": "2.8.9"
-          }
-        },
-        {
-          "group": "androidx.navigation",
-          "module": "navigation-ui-ktx",
-          "version": {
-            "requires": "2.8.9"
-          }
-        },
-        {
-          "group": "androidx.navigation",
-          "module": "navigation-runtime-android",
-          "version": {
-            "requires": "2.9.0-rc01"
-          }
-        },
         {
           "group": "com.squareup.retrofit2",
           "module": "retrofit",
@@ -157,6 +136,27 @@
           }
         },
         {
+          "group": "androidx.navigation",
+          "module": "navigation-runtime",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
           "group": "androidx.databinding",
           "module": "viewbinding",
           "version": {
@@ -173,13 +173,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.0.1.aar",
-          "url": "sdk-1.0.1.aar",
-          "size": 979616,
-          "sha512": "16e9b46d803235a5520833b6815abbb3d1778c49211666411b5f0cec96484dbbd1ff3e7f5c7a70fed93b451372b4fea256e117cdbe47e6963f41618b7a336149",
-          "sha256": "5b34a26ceeec4e0c8c83561bf4bd1e2e017dfa0c36d13b65eef7b21fb963774b",
-          "sha1": "01111c1a78d3882d5083f1869a08c248a44b13f3",
-          "md5": "53f09536042cb11fc04efcb514376db8"
+          "name": "sdk-1.1.0.aar",
+          "url": "sdk-1.1.0.aar",
+          "size": 1078025,
+          "sha512": "f2f567aafc722eb13c0cc0446abc7668bf07ed34c2f37e4a6636f10b11320095cf684e0cff4114482d65ac892fbb7636cf61cab49b316f4f86822df2cf6e4fad",
+          "sha256": "ec4ad05ddf2d8bdf2e803b567f3add42b2742aa9010327011bea7bb928d720a1",
+          "sha1": "249b08a9405b0e9e3560ba99ca15393a9cf90f56",
+          "md5": "23db52fc7c6bcef8076a20d0af078ac5"
         }
       ]
     },
@@ -228,27 +228,6 @@
           }
         },
         {
-          "group": "androidx.navigation",
-          "module": "navigation-fragment-ktx",
-          "version": {
-            "requires": "2.8.9"
-          }
-        },
-        {
-          "group": "androidx.navigation",
-          "module": "navigation-ui-ktx",
-          "version": {
-            "requires": "2.8.9"
-          }
-        },
-        {
-          "group": "androidx.navigation",
-          "module": "navigation-runtime-android",
-          "version": {
-            "requires": "2.9.0-rc01"
-          }
-        },
-        {
           "group": "com.squareup.retrofit2",
           "module": "retrofit",
           "version": {
@@ -361,6 +340,27 @@
           }
         },
         {
+          "group": "androidx.navigation",
+          "module": "navigation-runtime",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
           "group": "androidx.databinding",
           "module": "viewbinding",
           "version": {
@@ -377,13 +377,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.0.1.aar",
-          "url": "sdk-1.0.1.aar",
-          "size": 979616,
-          "sha512": "16e9b46d803235a5520833b6815abbb3d1778c49211666411b5f0cec96484dbbd1ff3e7f5c7a70fed93b451372b4fea256e117cdbe47e6963f41618b7a336149",
-          "sha256": "5b34a26ceeec4e0c8c83561bf4bd1e2e017dfa0c36d13b65eef7b21fb963774b",
-          "sha1": "01111c1a78d3882d5083f1869a08c248a44b13f3",
-          "md5": "53f09536042cb11fc04efcb514376db8"
+          "name": "sdk-1.1.0.aar",
+          "url": "sdk-1.1.0.aar",
+          "size": 1078025,
+          "sha512": "f2f567aafc722eb13c0cc0446abc7668bf07ed34c2f37e4a6636f10b11320095cf684e0cff4114482d65ac892fbb7636cf61cab49b316f4f86822df2cf6e4fad",
+          "sha256": "ec4ad05ddf2d8bdf2e803b567f3add42b2742aa9010327011bea7bb928d720a1",
+          "sha1": "249b08a9405b0e9e3560ba99ca15393a9cf90f56",
+          "md5": "23db52fc7c6bcef8076a20d0af078ac5"
         }
       ]
     },
