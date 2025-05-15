@@ -21,7 +21,7 @@ A powerful and secure payment processing SDK for Android applications that enabl
     ```
 2. Add the dependency in your module's `build.gradle`:
     ```gradle
-    implementation("ua.novapay:sdk:1.0.1")
+    implementation("ua.novapay:sdk:1.0.5")
     ```
 
 ## 🚀 Getting Started
@@ -33,7 +33,8 @@ Initialize the SDK in your application or activity:
 ```kotlin
 PaymentSdk.initialize(
     context = context,
-    environment = EnvironmentType.DEVELOPMENT // Options: DEVELOPMENT, STAGING, PRODUCTION
+    environment = EnvironmentType.DEVELOPMENT, // Options: DEVELOPMENT, STAGING, PRODUCTION
+    language = LanguageType.UK // Options: UK, EN
 )
 ```
 
@@ -47,14 +48,19 @@ The SDK provides a ready-to-use payment sheet that handles the complete payment 
 PaymentSdk.showPaymentSheet(
     fragmentActivity = activity,
     sessionId = "your_session_id", // Session ID received from server's /init endpoint
-    sessionStatusCallback = { status -> 
+    paymentSheetStatus = { status -> 
         // Handle session status updates
-    },
-    sessionErrorCallback = { message -> 
-        // Handle session error message
-    },
-    paymentSheetStatusCallback = { status ->
-        // Handle payment sheet status updates
+        when (status) {
+            is PaymentSheetStatus.Completed -> { 
+                // Handle complete 
+            }
+            is PaymentSheetStatus.Failed -> {
+                // Handle error message 
+            }
+            is PaymentSheetStatus.Canceled -> {
+                // Handle canceled 
+            }
+        }
     }
 )
 ```
@@ -81,8 +87,7 @@ val sessionStatus = PaymentSdk.getSession(sessionId)
 ```kotlin
 data class SessionStatusResult(
     val status: String?,
-    @SerializedName("reason_uk") val reasonUk: String?,
-    @SerializedName("reason_en") val reasonEn: String?
+    @SerializedName("reason") val reason: String?,
 )
 ```
 
@@ -96,26 +101,20 @@ class YourActivity : AppCompatActivity() {
         // Initialize SDK
         PaymentSdk.initialize(
             context = this,
-            environment = EnvironmentType.DEVELOPMENT
+            environment = EnvironmentType.DEVELOPMENT,
+            language = LanguageType.UK
         )
         
         // Show payment sheet
         PaymentSdk.showPaymentSheet(
             fragmentActivity = this,
             sessionId = "your_session_id",
-            sessionStatusCallback = { status ->
+            paymentSheetStatus = { status ->
                 when (status) {
-                    SessionPaymentStatusType.HOLDED -> handleSuccess()
-                    SessionPaymentStatusType.PAID -> handleSuccess()
-                    SessionPaymentStatusType.FAILED -> handleFailure()
-                    else -> handleOtherStatus(status)
+                    is PaymentSheetStatus.Completed -> handleSuccess()
+                    is PaymentSheetStatus.Canceled -> handleCanceled()
+                    is PaymentSheetStatus.Failed -> handleFailure()
                 }
-            },
-            sessionErrorCallback = { message ->
-                // Handle session error message
-            },
-            paymentSheetStatusCallback = { status ->
-                Log.d("PaymentSheet", status)
             }
         )
     }
