@@ -113,7 +113,7 @@ class YourActivity : AppCompatActivity() {
                 when (status) {
                     is PaymentSheetStatus.Completed -> handleSuccess()
                     is PaymentSheetStatus.Canceled -> handleCanceled()
-                    is PaymentSheetStatus.Failed -> handleFailure()
+                    is PaymentSheetStatus.Failed -> handleFailure(message = status.error)
                 }
             }
         )
