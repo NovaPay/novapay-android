@@ -93,7 +93,7 @@ Stop sessions status pooling:
 PaymentSdk.stopSessionsStatusPooling()
 ```
 
-### Payment Settings
+### Wallet Sheet
 
 The SDK provides settings for managing payment methods and preferences:
 
