@@ -93,7 +93,9 @@ Stop sessions status pooling:
 PaymentSdk.stopSessionsStatusPooling()
 ```
 
-For showing the payment settings screen:
+### Payment Settings
+
+The SDK provides settings for managing payment methods and preferences:
 
 ```kotlin
 PaymentSdk.showPaymentSettingsScreen(context, token)
