@@ -91,7 +91,7 @@ lifecycleScope.launch {
 Stop sessions status pooling:
 
 ```kotlin
-val sessionStatus = PaymentSdk.stopSessionsStatusPooling()
+PaymentSdk.stopSessionsStatusPooling()
 ```
 
 For showing the payment settings screen:
