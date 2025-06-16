@@ -82,7 +82,7 @@ Check the status of a payment session:
 
 ```kotlin
 lifecycleScope.launch {
-    PaymentSdk.getSessionStatus(sessionId).collect { status ->
+    PaymentSdk.startSessionsStatusPooling(sessionId).collect { status ->
     }
 }
 ```
@@ -98,7 +98,7 @@ PaymentSdk.stopSessionsStatusPooling()
 The SDK provides settings for managing payment methods and preferences:
 
 ```kotlin
-PaymentSdk.showPaymentSettingsScreen(context, token)
+PaymentSdk.showWalletSheet(context, token)
 ```
 
 ## 📱 Integration Example
