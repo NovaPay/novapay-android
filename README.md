@@ -81,7 +81,6 @@ PaymentSdk.dismissPaymentSheet(activity)
 Check the status of a payment session:
 
 ```kotlin
-val sessionStatus = PaymentSdk.getSession(sessionId)
 lifecycleScope.launch {
     PaymentSdk.getSessionStatus(sessionId).collect { status ->
     }
