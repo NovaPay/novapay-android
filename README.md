@@ -82,13 +82,22 @@ Check the status of a payment session:
 
 ```kotlin
 val sessionStatus = PaymentSdk.getSession(sessionId)
+lifecycleScope.launch {
+    PaymentSdk.getSessionStatus(sessionId).collect { status ->
+    }
+}
 ```
 
+Stop sessions status pooling:
+
 ```kotlin
-data class SessionStatusResult(
-    val status: String?,
-    @SerializedName("reason") val reason: String?,
-)
+val sessionStatus = PaymentSdk.stopSessionsStatusPooling()
+```
+
+For showing the payment settings screen:
+
+```kotlin
+val sessionStatus = PaymentSdk.showPaymentSettingsScreen(context, token)
 ```
 
 ## 📱 Integration Example
