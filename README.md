@@ -97,7 +97,7 @@ val sessionStatus = PaymentSdk.stopSessionsStatusPooling()
 For showing the payment settings screen:
 
 ```kotlin
-val sessionStatus = PaymentSdk.showPaymentSettingsScreen(context, token)
+PaymentSdk.showPaymentSettingsScreen(context, token)
 ```
 
 ## 📱 Integration Example
