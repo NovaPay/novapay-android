@@ -106,16 +106,23 @@ PaymentSdk.showWalletSheet(context, token)
 The SDK provides initiating a payout process:
 
 ```kotlin
-PaymentSdk.showPayoutSheet(context, sessionId)
-```
-
-### Session Management
-
-Check the status of a payout session:
-
-```kotlin
-PaymentSdk.observePayoutSheetStatus { result ->
-}
+PaymentSdk.showPayoutSheet(
+    context = context,
+    sessionId = "your_session_id", // Session ID received from server's /init-payout endpoint
+    payoutSheetStatus = { status -> 
+        // Handle session status updates
+        when (status) {
+            is PayoutSheetStatus.Completed -> { 
+                // Handle complete 
+            }
+            is PayoutSheetStatus.Failed -> {
+                // Handle error message 
+            }
+            is PayoutSheetStatus.Canceled -> {
+                // Handle canceled 
+            }
+        }
+    })
 ```
 
 ## 📱 Integration Example
