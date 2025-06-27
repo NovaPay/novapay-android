@@ -101,6 +101,24 @@ The SDK provides settings for managing payment methods and preferences:
 PaymentSdk.showWalletSheet(context, token)
 ```
 
+### Payout Sheet
+
+The SDK provides initiating a payout process:
+
+```kotlin
+PaymentSdk.showPayoutSheet(context, sessionId)
+```
+
+### Session Management
+
+Check the status of a payout session:
+
+```kotlin
+PaymentSdk.observePayoutSheetStatus { result ->
+    Toast.makeText(this@MainActivity, "$result", Toast.LENGTH_SHORT).show()
+}
+```
+
 ## 📱 Integration Example
 
 ```kotlin
@@ -145,6 +163,26 @@ class YourActivity : AppCompatActivity() {
     android:name="com.google.android.gms.wallet.api.enabled"
     android:value="true" />
     ```
+
+- Meta-data in AndroidManifest.xml to enable Google Pay:
+   ```xml
+    <meta-data
+    android:name="com.google.android.gms.wallet.api.enabled"
+    android:value="true" />
+    ```
+
+## 🛡️ ProGuard / R8 Rules
+
+If you use ProGuard or R8, add the following rules to your `proguard-rules.pro` file:
+
+```pro
+-keep class ua.novapay.sdk.presentation.** { *; }
+-keep class ua.novapay.sdk.domain.model.** { *; }
+-keep class ua.novapay.sdk.data.model.** { *; }
+-keep class ua.novapay.sdk.data.cache.bd.entity.** { *; }
+-keep class ua.novapay.sdk.data.interceptor.** { *; }
+-dontwarn java.lang.invoke.StringConcatFactory
+```
 
 ## 🌍 Environment Configuration
 
