@@ -115,7 +115,6 @@ Check the status of a payout session:
 
 ```kotlin
 PaymentSdk.observePayoutSheetStatus { result ->
-    Toast.makeText(this@MainActivity, "$result", Toast.LENGTH_SHORT).show()
 }
 ```
 
