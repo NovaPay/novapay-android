@@ -3,7 +3,7 @@
   "component": {
     "group": "ua.novapay",
     "module": "sdk",
-    "version": "1.3.1",
+    "version": "1.3.4",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -173,13 +173,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.1.aar",
-          "url": "sdk-1.3.1.aar",
-          "size": 1338587,
-          "sha512": "4f526dbde1dd8bc124d28fe7a12f626628b3322fee16d939e2e3296a2830680a9c463254be1094db8f6e49f890a7e0c2203eb14c9445f14581cafe0e32cd7f4d",
-          "sha256": "0dc97eba63b4eaafcafa7071d547afbe1a649ffc08bb0a828454be65cd4963c4",
-          "sha1": "15d3d176de4a390f7377c027b619ab10d1970125",
-          "md5": "7594e36c8ffbbe4ad4c8569adf3b3781"
+          "name": "sdk-1.3.4.aar",
+          "url": "sdk-1.3.4.aar",
+          "size": 1344961,
+          "sha512": "02ca270632334ffb010f32a6cec5febc872d2fe04963aa2c074fda25e05a644d6aafa11f467dbecf518e3303013ed35839e8615af93e9fe2488e0f861846d799",
+          "sha256": "76bc288f9b69d0145bed0915dcfeb8a236049c77b64e74d3add65613ace7ec32",
+          "sha1": "0fe3bbc2fa7982da753e7c463fddfa24ac1b8ae3",
+          "md5": "c70b849210e42f27fd117fb57d086dc5"
         }
       ]
     },
@@ -377,13 +377,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.1.aar",
-          "url": "sdk-1.3.1.aar",
-          "size": 1338587,
-          "sha512": "4f526dbde1dd8bc124d28fe7a12f626628b3322fee16d939e2e3296a2830680a9c463254be1094db8f6e49f890a7e0c2203eb14c9445f14581cafe0e32cd7f4d",
-          "sha256": "0dc97eba63b4eaafcafa7071d547afbe1a649ffc08bb0a828454be65cd4963c4",
-          "sha1": "15d3d176de4a390f7377c027b619ab10d1970125",
-          "md5": "7594e36c8ffbbe4ad4c8569adf3b3781"
+          "name": "sdk-1.3.4.aar",
+          "url": "sdk-1.3.4.aar",
+          "size": 1344961,
+          "sha512": "02ca270632334ffb010f32a6cec5febc872d2fe04963aa2c074fda25e05a644d6aafa11f467dbecf518e3303013ed35839e8615af93e9fe2488e0f861846d799",
+          "sha256": "76bc288f9b69d0145bed0915dcfeb8a236049c77b64e74d3add65613ace7ec32",
+          "sha1": "0fe3bbc2fa7982da753e7c463fddfa24ac1b8ae3",
+          "md5": "c70b849210e42f27fd117fb57d086dc5"
         }
       ]
     },
