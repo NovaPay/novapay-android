@@ -48,6 +48,7 @@ The SDK provides a ready-to-use payment sheet that handles the complete payment 
 PaymentSdk.showPaymentSheet(
     fragmentActivity = activity,
     sessionId = "your_session_id", // Session ID received from server's /init endpoint
+    themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
     paymentSheetStatus = { status -> 
         // Handle session status updates
         when (status) {
@@ -109,6 +110,7 @@ The SDK provides initiating a payout process:
 PaymentSdk.showPayoutSheet(
     context = context,
     sessionId = "your_session_id", // Session ID received from server's /init-payout endpoint
+    themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
     payoutSheetStatus = { status -> 
         // Handle session status updates
         when (status) {
@@ -143,6 +145,7 @@ class YourActivity : AppCompatActivity() {
         PaymentSdk.showPaymentSheet(
             fragmentActivity = this,
             sessionId = "your_session_id",
+            themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
             paymentSheetStatus = { status ->
                 when (status) {
                     is PaymentSheetStatus.Completed -> handleSuccess()
