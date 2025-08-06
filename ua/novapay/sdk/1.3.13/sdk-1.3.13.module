@@ -3,7 +3,7 @@
   "component": {
     "group": "ua.novapay",
     "module": "sdk",
-    "version": "1.3.11",
+    "version": "1.3.13",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -157,6 +157,13 @@
           }
         },
         {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "7.6.0"
+          }
+        },
+        {
           "group": "androidx.databinding",
           "module": "viewbinding",
           "version": {
@@ -173,13 +180,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.11.aar",
-          "url": "sdk-1.3.11.aar",
-          "size": 1352293,
-          "sha512": "0ed7bb9bc71d22f91005f7044ddc3f1903d5cf42c65251501defb020d4f31b4fe2dc37ec4508a00f728df5bfa83c203b3c33848c84932427460c4f183301fc67",
-          "sha256": "94aaa82723424965c3bf952b3d2b44c8cd8177de0a26c9aea30383430d795edf",
-          "sha1": "668394c40e3f23e6e116f0814d58fab05f31a7c4",
-          "md5": "6a0ac6674d221230b005b2ed25b1863f"
+          "name": "sdk-1.3.13.aar",
+          "url": "sdk-1.3.13.aar",
+          "size": 1362227,
+          "sha512": "660ab78c104212e6a26a371ec46f5f0a9047e17ec48579e9543185618eaab3712ad007ccc17199fdec0c45eed2bbd411adc5d035dfe03db87231914ea7ea36c2",
+          "sha256": "58caec2342882a61e871de0280f2c46f153c35c08146b26dce7526aeb87f2bcc",
+          "sha1": "11349098288976d6551f4b153c2a116d622f9937",
+          "md5": "0b50741aaa831284057d92dd3871d6a1"
         }
       ]
     },
@@ -361,6 +368,13 @@
           }
         },
         {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "7.6.0"
+          }
+        },
+        {
           "group": "androidx.databinding",
           "module": "viewbinding",
           "version": {
@@ -377,13 +391,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.11.aar",
-          "url": "sdk-1.3.11.aar",
-          "size": 1352293,
-          "sha512": "0ed7bb9bc71d22f91005f7044ddc3f1903d5cf42c65251501defb020d4f31b4fe2dc37ec4508a00f728df5bfa83c203b3c33848c84932427460c4f183301fc67",
-          "sha256": "94aaa82723424965c3bf952b3d2b44c8cd8177de0a26c9aea30383430d795edf",
-          "sha1": "668394c40e3f23e6e116f0814d58fab05f31a7c4",
-          "md5": "6a0ac6674d221230b005b2ed25b1863f"
+          "name": "sdk-1.3.13.aar",
+          "url": "sdk-1.3.13.aar",
+          "size": 1362227,
+          "sha512": "660ab78c104212e6a26a371ec46f5f0a9047e17ec48579e9543185618eaab3712ad007ccc17199fdec0c45eed2bbd411adc5d035dfe03db87231914ea7ea36c2",
+          "sha256": "58caec2342882a61e871de0280f2c46f153c35c08146b26dce7526aeb87f2bcc",
+          "sha1": "11349098288976d6551f4b153c2a116d622f9937",
+          "md5": "0b50741aaa831284057d92dd3871d6a1"
         }
       ]
     },

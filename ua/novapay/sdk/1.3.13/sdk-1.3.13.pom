@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ua.novapay</groupId>
   <artifactId>sdk</artifactId>
-  <version>1.3.11</version>
+  <version>1.3.13</version>
   <packaging>aar</packaging>
   <name>sdk</name>
   <description>Novapay payment Library</description>
@@ -140,6 +140,12 @@
       <groupId>androidx.navigation</groupId>
       <artifactId>navigation-ui-ktx</artifactId>
       <version>2.8.9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.sentry</groupId>
+      <artifactId>sentry-android</artifactId>
+      <version>7.6.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
