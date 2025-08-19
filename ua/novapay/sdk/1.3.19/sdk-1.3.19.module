@@ -3,7 +3,7 @@
   "component": {
     "group": "ua.novapay",
     "module": "sdk",
-    "version": "1.3.17",
+    "version": "1.3.19",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -180,13 +180,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.17.aar",
-          "url": "sdk-1.3.17.aar",
-          "size": 1366324,
-          "sha512": "f22cafd7c9605017462d24d7e95bdfb94c27352cae52df06b5014d980d53d4046b7606cb3543c2e7a821f078f6afd5a566b86b0aedd40b751de76d0506902030",
-          "sha256": "aa38f645d1e4dc398c6098c80591511bc2b66e8416449b4913c5fda9441ee591",
-          "sha1": "958ed3389d315c1a6baeb04c63d9595604f7bb3a",
-          "md5": "f8e4a5708ffaf5bde58c6a60d440e7d8"
+          "name": "sdk-1.3.19.aar",
+          "url": "sdk-1.3.19.aar",
+          "size": 1366418,
+          "sha512": "6c57012aef9baa4fe96a635d560392f973ef8f394e11fbaf5b117b92784958df63e6e89a0e43702d61dc6df92e1d5f728fc2e9b79bf02ff142e6d7be75f32143",
+          "sha256": "3c58febb804de65660eb8ce819239f214a494ad22562edd0f564aec098de10dd",
+          "sha1": "51358224bc68090da6730eafdf02a23559c74348",
+          "md5": "5f48bb6a169d125f18932e69dd5e9729"
         }
       ]
     },
@@ -391,13 +391,13 @@
       ],
       "files": [
         {
-          "name": "sdk-1.3.17.aar",
-          "url": "sdk-1.3.17.aar",
-          "size": 1366324,
-          "sha512": "f22cafd7c9605017462d24d7e95bdfb94c27352cae52df06b5014d980d53d4046b7606cb3543c2e7a821f078f6afd5a566b86b0aedd40b751de76d0506902030",
-          "sha256": "aa38f645d1e4dc398c6098c80591511bc2b66e8416449b4913c5fda9441ee591",
-          "sha1": "958ed3389d315c1a6baeb04c63d9595604f7bb3a",
-          "md5": "f8e4a5708ffaf5bde58c6a60d440e7d8"
+          "name": "sdk-1.3.19.aar",
+          "url": "sdk-1.3.19.aar",
+          "size": 1366418,
+          "sha512": "6c57012aef9baa4fe96a635d560392f973ef8f394e11fbaf5b117b92784958df63e6e89a0e43702d61dc6df92e1d5f728fc2e9b79bf02ff142e6d7be75f32143",
+          "sha256": "3c58febb804de65660eb8ce819239f214a494ad22562edd0f564aec098de10dd",
+          "sha1": "51358224bc68090da6730eafdf02a23559c74348",
+          "md5": "5f48bb6a169d125f18932e69dd5e9729"
         }
       ]
     },
