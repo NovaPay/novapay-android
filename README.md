@@ -21,7 +21,7 @@ A powerful and secure payment processing SDK for Android applications that enabl
     ```
 2. Add the dependency in your module's `build.gradle`:
     ```gradle
-    implementation("ua.novapay:sdk:1.3.21")
+    implementation("ua.novapay:sdk:1.3.22")
     ```
 
 ## 🚀 Getting Started
