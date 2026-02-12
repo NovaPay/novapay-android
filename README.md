@@ -47,7 +47,7 @@ The SDK provides a ready-to-use payment sheet that handles the complete payment 
 ```kotlin
 PaymentSdk.showPaymentSheet(
     fragmentActivity = activity,
-    sessionId = "your_session_id", // Session ID received from server's /init endpoint
+    sessionIds = List<String>, // Session ID's received from server's /init endpoint
     themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
     paymentSheetStatus = { status -> 
         // Handle session status updates
@@ -62,6 +62,9 @@ PaymentSdk.showPaymentSheet(
                 // Handle canceled 
             }
         }
+    },
+    on3DsRequired = {
+        PaymentSdk.show3DsScreen()
     }
 )
 ```
@@ -144,7 +147,7 @@ class YourActivity : AppCompatActivity() {
         // Show payment sheet
         PaymentSdk.showPaymentSheet(
             fragmentActivity = this,
-            sessionId = "your_session_id",
+            sessionIds = List<String>,
             themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
             paymentSheetStatus = { status ->
                 when (status) {
@@ -152,6 +155,9 @@ class YourActivity : AppCompatActivity() {
                     is PaymentSheetStatus.Canceled -> handleCanceled()
                     is PaymentSheetStatus.Failed -> handleFailure(message = status.error)
                 }
+            },
+            on3DsRequired = {
+                PaymentSdk.show3DsScreen()
             }
         )
     }
