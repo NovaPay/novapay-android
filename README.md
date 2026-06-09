@@ -49,9 +49,9 @@ PaymentSdk.showPaymentSheet(
     fragmentActivity = activity,
     sessionIds = List<String>, // Session ID's received from server's /init endpoint
     themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
-    paymentSheetStatus = { status -> 
+    paymentSheetStatus = { result -> 
         // Handle session status updates
-        when (status) {
+        when (val status = result.status) {
             is PaymentSheetStatus.Completed -> { 
                 // Handle complete 
             }
@@ -149,10 +149,22 @@ class YourActivity : AppCompatActivity() {
             fragmentActivity = this,
             sessionIds = List<String>,
             themeMode = SdkThemeMode.SYSTEM, // Options: LIGHT, DARK, SYSTEM
-            paymentSheetStatus = { status ->
-                when (status) {
-                    is PaymentSheetStatus.Completed -> handleSuccess()
-                    is PaymentSheetStatus.Canceled -> handleCanceled()
+            paymentSheetStatus = { result ->
+                when (val status = result.status) {
+                    is PaymentSheetStatus.Completed -> {
+                        handleSuccess(
+                            status = result.status.name,
+                            session = result.sessionId,
+                            orderNumber = result.orderNumber
+                        )
+                    }
+                    is PaymentSheetStatus.Canceled -> {
+                        handleSuccess(
+                            status = result.status.name,
+                            session = result.sessionId,
+                            orderNumber = result.orderNumber
+                        )
+                    }
                     is PaymentSheetStatus.Failed -> handleFailure(message = status.error)
                 }
             },
