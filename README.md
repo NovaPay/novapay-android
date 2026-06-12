@@ -69,11 +69,6 @@ PaymentSdk.showPaymentSheet(
 )
 ```
 
-To dismiss the payment sheet:
-```kotlin
-PaymentSdk.dismissPaymentSheet(activity)
-```
-
 ### Supported Payment Methods
 
 - 💳 Manual card payments
