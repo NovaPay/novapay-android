@@ -97,7 +97,14 @@ PaymentSdk.stopSessionsStatusPooling()
 The SDK provides settings for managing payment methods and preferences:
 
 ```kotlin
-PaymentSdk.showWalletSheet(context, token)
+PaymentSdk.showWalletSheet(
+    context = this@MainActivity, 
+    token = token,
+    themeMode = SdkThemeMode.SYSTEM,
+    onDismiss = {
+        // Handle dismiss screen
+    }
+)
 ```
 
 ### Payout Sheet
